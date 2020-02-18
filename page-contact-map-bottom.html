@@ -13,6 +13,14 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#header-include").load("header.html");
+            $("#footer-include").load("footer.html");
+
+        });
+    </script>
 </head>
 
 <body>
@@ -21,11 +29,11 @@
     <!-- Body Inner -->
     <div class="body-inner">
 
-        <!-- Header -->
         <header id="header">
             <div class="header-inner">
                 <div class="container">
                     <!--Logo-->
+
                     <div id="logo"> <a href="index.html"><span class="logo-default">KDK Forging Company</span><span class="logo-dark">POLO</span></a> </div>
                     <!--End: Logo-->
 
@@ -53,7 +61,8 @@
                                     <li><a href="page-contact-map-bottom.html">Contact Us</a></li>
                                 </ul> 
                             </nav>
-
+                        </div>
+                    </div>
                            
                     <!--end: Navigation-->
                 </div>
@@ -76,12 +85,10 @@
                                     <strong>K.D.K. Upset Forging Company</strong><br>
                                     2645 W. 139th St.<br>
                                     Blue Island, IL 60406<br>
-                                    <abbr title="Phone">P:</h4> (708) 388-8770
+                                    <abbr title="Phone">P: (708) 388-8770
                                 </address>
                             </div>
-                            <div class="col-lg-6">
-      
-                            </div>
+                            <div class="col-lg-6"></div>
                         </div>
                         <div class="social-icons m-t-30 social-icons-colored">
                             <ul>
@@ -92,7 +99,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <form class="widget-contact-form" novalidate action="include/contact-form.php" role="form" method="post">
+                        <form class="widget-contact-form" novalidate action="include/contact-form.php" role="form" method="post" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="name">Name</label>
@@ -104,19 +111,27 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-6">
                                     <label for="subject">Your Subject</label>
                                     <input type="text" name="widget-contact-form-subject" required class="form-control required" placeholder="Subject...">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="subject">Company</label>
+                                    <input type="text" name="widget-contact-form-company-name" required class="form-control required" placeholder="Company...">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
                                 <textarea type="text" name="widget-contact-form-message" required rows="5" class="form-control required" placeholder="Enter your Message"></textarea>
                             </div>
-                                <div class="form-group">
-                                    <script src="https://www.google.com/recaptcha/api.js"></script>
-                                    <div class="g-recaptcha" data-sitekey="6LcYCNcUAAAAAGSl5Lw_H3HAblEe0Omq56dLU1eS"></div>
-                                </div>
+                            <div class="form-group">
+                                <label for="attachment">Attachment file<small>*</small></label>
+                                <input type="file" aria-required="true" name="file" accept=".jpg, .png, .doc, .docx, .pdf" class="form-control required" />
+                            </div>
+                            <div class="form-group">
+                                <script src="https://www.google.com/recaptcha/api.js"></script>
+                                <div class="g-recaptcha" data-sitekey="6LcYCNcUAAAAAGSl5Lw_H3HAblEe0Omq56dLU1eS"></div>
+                            </div>
                             <button class="btn" type="submit" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
                         </form>
                     </div>
@@ -132,76 +147,10 @@
         </section>
         <!-- end: MAP -->
         <!-- Footer -->
-        <footer id="footer">
-            <div class="footer-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="widget">
-                                <div class="widget-title">Polo HTML5 Template</div>
-                                <p class="mb-5">Built with love in Fort Worth, Texas, USA<br>
-                                    All rights reserved. Copyright © 2019. INSPIRO.</p>
-                                <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923" class="btn btn-inverted">Purchase Now</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Discover</div>
-                                        <ul class="list">
-                                            <li><a href="#">Features</a></li>
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Corporate</a></li>
-                                            <li><a href="#">Updates</a></li>
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Customers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Features</div>
-                                        <ul class="list">
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Headers</a></li>
-                                            <li><a href="#">Widgets</a></li>
-                                            <li><a href="#">Footers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Pages</div>
-                                        <ul class="list">
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Shop</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Support</div>
-                                        <ul class="list">
-                                            <li><a href="#">Help Desk</a></li>
-                                            <li><a href="#">Documentation</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-content">
-                <div class="container">
-                    <div class="copyright-text text-center">&copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template.
-                        All Rights Reserved.<a href="//www.inspiro-media.com" target="_blank"> INSPIRO</a> </div>
-                </div>
-            </div>
-        </footer>
+        <!-- <footer id="footer"> -->
+        <div id="footer-include"></div>
+
+        <!-- </footer> -->
         <!-- end: Footer -->
     </div> <!-- end: Body Inner -->
     <!-- Scroll top -->
@@ -213,7 +162,7 @@
     <script src="js/functions.js"></script>
     <!--Google Maps files-->
     <!-- <script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyDCarQL9dx8p4dR32H6Sqd18t_3jpcpdtE'> -->
-    </script>
+    <!-- </script> -->
 <!--     <script type="text/javascript" src="plugins/gmap3/gmap3.min.js"></script>
     <script type="text/javascript" src="plugins/gmap3/map-styles.js"></script> -->
 </body>

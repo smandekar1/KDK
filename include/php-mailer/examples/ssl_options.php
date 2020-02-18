@@ -5,12 +5,21 @@
 
 //SMTP needs accurate times, and the PHP time zone MUST be set
 //This should be done in your php.ini, but this is how to do it if you don't have access to that
-date_default_timezone_set('Etc/UTC');
+date_default_timezone_set('America/Los_Angeles');
 
-require '../PHPMailerAutoload.php';
+require 'PHPMailerAutoload.php';
 
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
+
+// require 'path/to/PHPMailer/src/Exception.php';
+// require 'path/to/PHPMailer/src/PHPMailer.php';
+// require 'path/to/PHPMailer/src/SMTP.php';
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
+
+
+
 
 //Tell PHPMailer to use SMTP
 $mail->isSMTP();
@@ -25,13 +34,13 @@ $mail->SMTPDebug = 2;
 $mail->Debugoutput = 'html';
 
 //Set the hostname of the mail server
-$mail->Host = 'smtp.example.com';
+$mail->Host = 'smtp.bizmail.yahoo.com';
 
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-$mail->Port = 587;
+$mail->Port = 465;
 
 //Set the encryption system to use - ssl (deprecated) or tls
-$mail->SMTPSecure = 'tls';
+$mail->SMTPSecure = 'ssl';
 
 //Custom connection options
 $mail->SMTPOptions = array (
@@ -48,16 +57,16 @@ $mail->SMTPOptions = array (
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "username@example.com";
+$mail->Username = "webdev@kdkforging.com";
 
 //Password to use for SMTP authentication
-$mail->Password = "yourpassword";
+$mail->Password = "Webdev123!";
 
 //Set who the message is to be sent from
-$mail->setFrom('from@example.com', 'First Last');
+$mail->setFrom('webdev@kdkforging.com');
 
 //Set who the message is to be sent to
-$mail->addAddress('whoto@example.com', 'John Doe');
+$mail->addAddress('webdev@kdkforging.com');
 
 //Set the subject line
 $mail->Subject = 'PHPMailer SMTP options test';

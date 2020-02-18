@@ -12,6 +12,14 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#header-include").load("header.html");
+            $("#footer-include").load("footer.html");
+
+        });
+    </script>
 </head>
 
 <body>
@@ -19,46 +27,8 @@
 
     <!-- Body Inner -->
     <div class="body-inner">
-
-        <!-- Header -->
-        <header id="header">
-            <div class="header-inner">
-                <div class="container">
-                    <!--Logo-->
-                    <div id="logo"> <a href="index.html"><span class="logo-default">KDK Forging Company</span><span class="logo-dark">POLO</span></a> </div>
-                    <!--End: Logo-->
-
-                    <!--Navigation Resposnive Trigger-->
-                    <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
-                    <!--end: Navigation Resposnive Trigger-->
-                    <!--Navigation-->
-                    <div id="mainMenu">
-                        <div class="container">
-                            <nav>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="page-about-basic.html">About</a></li>
-
-                                     
-                                    <li class="dropdown"><a href="#">Products</a>
-                                        <ul class="dropdown-menu">
-                                                <li><a href="page-gallery-eyebolt.html">Eyebolts</a></li>
-                                                <li><a href="page-gallery-torsion-bar.html">Torsion Bars</a></li>
-                                                <li><a href="page-gallery-gear-blank.html">Gear Blanks</a></li>
-                                                <li><a href="page-gallery-chassis-products.html">Chassis Products</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li><a href="page-contact-map-bottom.html">Contact Us</a></li>
-                                </ul> 
-                            </nav>
-
-                           
-                    <!--end: Navigation-->
-                </div>
-            </div>
-        </header>
-        <!-- end: Header -->
+        <div id="header-include"></div>    
+        
         <!-- Page title -->
         <section id="page-title" data-bg-parallax="images/parallax/5.jpg">
             <div class="container">
@@ -110,77 +80,9 @@
                 <!-- end: Gallery -->
             </div>
         </section> <!-- end: Content -->
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="footer-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="widget">
-                                <div class="widget-title">Polo HTML5 Template</div>
-                                <p class="mb-5">Built with love in Fort Worth, Texas, USA<br>
-                                    All rights reserved. Copyright © 2019. INSPIRO.</p>
-                                <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923" class="btn btn-inverted">Purchase Now</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Discover</div>
-                                        <ul class="list">
-                                            <li><a href="#">Features</a></li>
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Corporate</a></li>
-                                            <li><a href="#">Updates</a></li>
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Customers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Features</div>
-                                        <ul class="list">
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Headers</a></li>
-                                            <li><a href="#">Widgets</a></li>
-                                            <li><a href="#">Footers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Pages</div>
-                                        <ul class="list">
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Shop</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Support</div>
-                                        <ul class="list">
-                                            <li><a href="#">Help Desk</a></li>
-                                            <li><a href="#">Documentation</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-content">
-                <div class="container">
-                    <div class="copyright-text text-center">&copy; 2020 K.D.K. Upset Forging Co. All Rights Reserved.</div>
-                </div>
-            </div>
-        </footer>
-        <!-- end: Footer -->
+    <!-- FOOTER -->
+            <div id="footer-include"></div>
+    <!-- FOOTER -->
     </div>
     <!-- end: Body Inner -->
     <!-- Scroll top -->

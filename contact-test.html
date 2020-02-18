@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PHPMailer Upload</title>
+</head>
+<body>
+<?php if (empty($msg)) { ?>
+    <form method="post" enctype="multipart/form-data" action="include/contact-form-test.php">
+        <input type="hidden" name="MAX_FILE_SIZE" value="100000"> Send this file: <input name="userfile" type="file">
+        <input type="submit" value="Send File">
+    </form>
+<?php } else {
+    echo $msg;
+} ?>
+</body>
+</html>
