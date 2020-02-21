@@ -7953,9 +7953,11 @@ Play Button
 .image-hover-zoom {
   position: relative;
   overflow: hidden;
+  /*border:10px solid #021a40;*/
   cursor: url("../images/expand.png"), default;
   /*hover state*/ }
   .image-hover-zoom img {
+    border: 50px solid #FFFFFF;
     transition: all .4s ease;
     opacity: 1; }
   .image-hover-zoom:hover img {
