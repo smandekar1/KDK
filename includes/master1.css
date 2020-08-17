@@ -1,0 +1,76 @@
+BODY {
+font-family : Verdana, Arial, sans-serif;
+font-size : 12px;
+color: #333;
+margin-top: 10px;
+margin-bottom: 0px;
+margin-left: 30px;
+margin-right: 30px;}
+
+P, TD, LI, UL, Table	{color: #333; font-size: 12px; line-height: 20px;}
+
+A:LINK 		{color: #982417; text-decoration: underline;}
+A:VISITED 	{color: #982417; text-decoration: none;}
+A:HOVER 	{color: #6e6855; text-decoration: underline;}
+A:ACTIVE 	{color: #982417; text-decoration: none;}
+
+h1 			{font-size: 15px;font-weight: bold;color: #982417;}
+h2 			{font-size: 14px;font-weight: bold;color: #6e6855;}
+h3 			{font-size: 13px;font-weight: bold;color: #6e6855;}
+h4 			{font-size: 14px;font-weight: bold;letter-spacing: 1px;color: #BBB28C;}
+h5 			{font-size: 13px;font-weight: bold;letter-spacing: 1px;color: #BBB28C;}
+h6 			{font-size: 12px; font-weight: bold;color: #982417; background: #F4F2EC;
+			border-top: 1px solid #BBB28C;letter-spacing: 1px; padding-left: 3px;}
+
+.topnav 	{text-transform: uppercase; font-family: arial, verdana, helvetica;
+			text-align: right; font-size: 11px;letter-spacing: 1px;padding: 5px;color: #982417; 
+			background: #fff;}
+.topnav A:LINK 		{color: #982417;text-decoration: underline;}
+.topnav A:VISITED 	{color: #982417;text-decoration: none;}
+.topnav A:HOVER 	{color: #6e6855;text-decoration: underline;}
+.topnav A:ACTIVE 	{color: #6e6855;text-decoration: underline;}
+
+.topnav2 	{text-transform: uppercase; font-family: arial, verdana, helvetica;
+			text-align:left; font-size: 11px; letter-spacing: 1px; color: #fff; background: #982417;}
+.topnav2 A:LINK 	{color: #fff;text-decoration: underline;padding: 5px 5px 5px 5px;}
+.topnav2 A:VISITED 	{color: #fff;text-decoration: none;padding:5px 5px 5px 5px;}
+.topnav2 A:HOVER 	{color: #990000;text-decoration: underline; 
+					background: #fff; padding: 5px 5px 5px 5px;}
+.topnav2 A:ACTIVE 	{color: #990000;text-decoration: underline; 
+					background: #fff; padding: 5px 5px 5px 5px;}
+
+.topnav3 	{text-transform: uppercase; font-family: arial, verdana, helvetica;
+			 text-align: left;font-size: 11px;letter-spacing: 1px;padding-left: 5px;color: #982417;}
+.topnav3 A:LINK 	{color: #982417;text-decoration: underline;}
+.topnav3 A:VISITED 	{color: #982417;text-decoration: none;}
+.topnav3 A:HOVER 	{color: #6e6855;text-decoration: underline;}
+.topnav3 A:ACTIVE 	{color: #6e6855;text-decoration: underline;}
+
+.sidenav 	{text-transform: lowercase; font-family: arial, verdana, helvetica;
+			text-align:right; font-size: 11px; letter-spacing: 1px; color: #fff;}
+.sidenav A:LINK 	{color: #982417;text-decoration: underline;padding: 5px 5px 5px 5px;}
+.sidenav A:VISITED 	{color: #982417;text-decoration: none;padding:5px 5px 5px 5px;}
+.sidenav A:HOVER 	{color: #982417;text-decoration: underline; padding: 5px 5px 5px 5px;}
+.sidenav A:ACTIVE 	{color: #982417;text-decoration: underline; padding: 5px 5px 5px 5px;}
+
+.infoheader 	{background: #e1ddcc; color: #982417; padding: 3px; font-size: 11px; font-weight: bold; border: 1px solid #e1ddcc;}
+.infobox 		{border: 1px solid #e1ddcc;font-size: 11px;padding: 3px;}
+.infoheader2 	{background: #636956; color: #fff; padding: 3px; font-size: 11px; font-weight: bold;border: 1px solid #e1ddcc; }
+
+.colorbox 		{background: #e1ddcc;}
+.colorboxtext 	{font-size: 13px; padding: 15px; color: #990000; line-height: 150%;}
+
+.banner 		{font-size: 18px; color: #982417; font-weight: bold;}
+
+.textarea1 		{text-align: left;line-height: 20px;padding: 15px 10px 10px 10px;border: 1px solid #E9E6D9;}
+
+.rightside 		{padding: 0px 0px 5px 5px;}
+
+.phone			{text-align: right; font-size: 11px; font-weight: bold; padding-right: 3px;}
+
+.copyright 		{font-size: 11px;text-align: center;color: #982417;line-height: 16px;letter-spacing: 1px;
+				padding: 5px;background: #ffffff;border-top: 1px solid #6e6855;}
+
+.prodimage 		{text-align: center; padding: 3px;}
+.prodtext 		{text-align: center; padding: 3px; font-size: 11px;}
+.prodtextdetail {text-align: left; padding: 3px; font-size: 11px;}
