@@ -262,6 +262,20 @@
         <image:title>Tie rod threaded and e-coated grease fitting</image:title>
       </image:image>
   </url>
+    <url>
+    <loc>https://kdkforging.com/bevel-pinion-forging.html</loc>
+    <lastmod>2020-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://kdkforging.com/homepages/grid/images/bevel-pinion-forging.jpg</image:loc>
+        <image:title>Bevel Pinion As Forged</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://kdkforging.com/homepages/grid/images/bevel-pinion-forging.jpg</image:loc>
+        <image:title>Unmachined bevel pinion forging</image:title>
+      </image:image>
+  </url>
   <url>
     <loc>https://kdkforging.com/index.html</loc>
     <lastmod>2020-06-16</lastmod>
@@ -441,6 +455,12 @@
         <image:title></image:title>
       </image:image>
   </url>
+    <url>
+    <loc>https://kdkforging.com/reshoring.html</loc>
+    <lastmod>2020-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://kdkforging.com/</loc>
     <lastmod>2020-06-16</lastmod>
@@ -527,4 +547,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
 </urlset>

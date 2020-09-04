@@ -14919,3 +14919,9 @@ body[data-bg-image] {
 } */
 
 /*# sourceMappingURL=style.css.map */
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
