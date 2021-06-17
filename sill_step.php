@@ -1,6 +1,8 @@
 <html>
 <head>
 
+
+<meta http-equiv="refresh" content="0; url='https://www.kdkforging.com/sill-step'" />
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
 <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
